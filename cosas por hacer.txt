@@ -1,0 +1,4 @@
+1) Hacer la estructura general del header
+2) Hacer el body (usar tarjetas para los eventos)
+3) Usar JS para hacer el tiempo
+4) Decoración y color (al final)
