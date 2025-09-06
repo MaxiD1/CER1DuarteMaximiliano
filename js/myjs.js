@@ -1,6 +1,6 @@
-function timer(x){
+function timer(fecha){
     // Fecha del evento
-    var fin = x
+    var fin = fecha
     // Variables que convierten las unidades
     // de tiempo a milisegundos
     var segundos = 1000

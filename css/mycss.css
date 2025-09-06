@@ -18,11 +18,13 @@ div{
     /* Alto */
     height: 50%;
     /* Borde - tipo - ancho */
-    border: solid 1px;
+    /*border: solid 1px;*/
 }
 
 /* Formato de las tarjetas (class=card) */
 .card{
     /* Ancho */
     width: 18rem;
+    /* Borde - tipo - ancho */
+    border: solid 1px;
 }
