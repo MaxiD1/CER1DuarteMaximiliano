@@ -3,20 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Texto en la pestaña -->
     <title>Document</title>
+    <!-- Vinculacion con el archivo css -->
     <link rel="stylesheet" href="css/mycss.css">
+    <!-- Vinculacion con el archivo js -->
     <script src="js/myjs.js"></script>
 </head>
 
+<!--  -->
+
 <body>
+    <div class="menu_superior"></div>
+    <div class="evento_importamte"></div>
+    <!-- Tarjetas sacadas de bootstrap.com -->
+    <!-- Tarjetas para los eventos -->
     <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
+        <!-- Imagen del elemento -->
+        <img class="card-img-top" src="..." alt="Imagen del evento">
+        <!-- Cuerpo de la tarjeta -->
         <div class="card-body">
+            <!-- Titulo de la tarjeta -->
             <h5 class="card-title">Card title</h5>
+            <!-- Temporizador -->
             <script>
-                timer(Date("2025-01-12T20:24:28GMT-0400"))
+                timer(new Date("2025-01-12T20:24:28"))
             </script>
+            <!-- Descripcion del evento -->
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <!-- Link a la pagina (no se si dejar) -->
             <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
     </div>

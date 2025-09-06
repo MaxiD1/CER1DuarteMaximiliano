@@ -14,17 +14,11 @@ function timer(x){
     //document.write(ahora)
     // El tiempo faltante
     var diferencia = fin - ahora
-    // En caso de que el evento ya haya pasado
-    if (diferencia == 0){
+    // En caso de que el evento haya empezado
+    if (diferencia <= 0){
         // 
         clearInterval(timer)
-        document.write("Ahora")
-        return
-    }
-    if (diferencia < 0){
-        // 
-        clearInterval(timer)
-        document.write("Finalizado")
+        document.write("El evento ya ha terminado")
         return
     }
     // Calculo del tiempo faltante

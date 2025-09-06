@@ -13,11 +13,16 @@ div{
     text-align: center;
     float: left;*/
 
+    /* Ancho */
     width: 100%;
+    /* Alto */
     height: 50%;
+    /* Borde - tipo - ancho */
     border: solid 1px;
 }
 
+/* Formato de las tarjetas (class=card) */
 .card{
+    /* Ancho */
     width: 18rem;
 }
