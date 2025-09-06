@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Texto en la pestaña -->
-    <title>Document</title>
+    <title>Pagina principal</title>
     <!-- Vinculacion con el archivo css -->
     <link rel="stylesheet" href="css/mycss.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Vinculacion con el archivo js -->
     <script src="js/myjs.js"></script>
 </head>
@@ -14,49 +15,40 @@
 <!--  -->
 
 <body>
-    <div class="menu_superior"></div>
-    <!-- ---------------------------------------- -->
-    <div class="evento_importamte"></div>
-    <!-- ---------------------------------------- -->
-    <div class="tarjetas">
-        <!-- Tarjetas sacadas de bootstrap.com -->
-        <!-- Tarjetas para los eventos -->
-        <div class="card">
-            <!-- Imagen del elemento -->
-            <img class="card-img-top" src="..." alt="Imagen del evento">
-            <!-- Cuerpo de la tarjeta -->
-            <div class="card-body">
-                <!-- Titulo de la tarjeta -->
-                <h5 class="card-title">Card title</h5>
-                <!-- Temporizador -->
-                <script>
-                    timer(new Date("2025-01-12T20:24:28"))
-                </script>
-                <!-- Descripcion del evento -->
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <!-- Link a la pagina (no se si dejar) -->
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="barra_navegacion">
+        <!-- Barra de navegacion sacadas de bootstrap.com -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!--  -->
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
             </div>
+        </nav>
+    </div>
+    <!-- ---------------------------------------- -->
+    <div class="evento_importamte">
+        <div class="imagen_evento">
+            <img src="img" alt="">
         </div>
-        <!-- ---------------------------------------- -->
-        <div class="card">
-            <!-- Imagen del elemento -->
-            <img class="card-img-top" src="..." alt="Imagen del evento">
-            <!-- Cuerpo de la tarjeta -->
-            <div class="card-body">
-                <!-- Titulo de la tarjeta -->
-                <h5 class="card-title">Card title</h5>
-                <!-- Temporizador -->
-                <script>
-                    timer(new Date("2025-01-12T20:24:28"))
-                </script>
-                <!-- Descripcion del evento -->
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <!-- Link a la pagina (no se si dejar) -->
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+        <div class="info_evento">
+            <p>Evento importante</p>
         </div>
-        <!-- ---------------------------------------- -->
     </div>
     <!-- ---------------------------------------- -->
 </body>
