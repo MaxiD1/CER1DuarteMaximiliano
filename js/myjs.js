@@ -37,3 +37,48 @@ function timer(fecha){
     document.write(m + "mins ")
     document.write(s + "secs")
 }
+
+function mk_comentario(){
+    event.preventDefault()
+
+    var nombre = document.getElementById("nombre").value
+    var comentario = document.getElementById("comentario").value
+    // Seccion de comentarios
+    var seccion = document.getElementsByClassName("col")[0]
+
+    var carta = document.createElement("div")
+    carta.setAttribute("class", "card")
+
+    // Crea el cuerpo de la carta
+    var card_body = document.createElement("div")
+    card_body.setAttribute("class", "card-body")
+
+    // Crea la seccion donde irá el nombre
+    var h5 = document.createElement("h5")
+    h5.setAttribute("class", "card-title")
+    h5.innerText = nombre
+
+    // Crea la seccion donde se mostrara la fecha
+    var p = document.createElement("p")
+    p.setAttribute("class", "card-subtitle mb-2 text-body-secondary")
+    // Pone la fechar en texto pequeño
+    var small = document.createElement("small")
+    small.innerText = new Date()
+    // Añade el texto pequeño a la seccion con la fecha
+    p.append(small)
+
+    // Crea la seccion con el comentario en sí
+    var p2 = document.createElement("p")
+    p2.setAttribute("class", "card-text")
+    p2.innerText = comentario
+
+    // Junta todos los elementos
+    card_body.append(h5)
+    card_body.append(p)
+    card_body.append(p2)
+
+    carta.append(card_body)
+
+    seccion.append(carta)
+
+}
