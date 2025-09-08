@@ -43,6 +43,26 @@ function mk_comentario(){
 
     var nombre = document.getElementById("nombre").value
     var comentario = document.getElementById("comentario").value
+    
+    window.alert(nombre)
+    if (nombre.length == 0){
+        window.alert("Debe escribir un nombre.")
+        exit()
+    }
+    if (comentario.length == 0){
+        window.alert("Debe escribir un comentario.")
+        exit()
+    }
+    if (nombre.length >= 500){
+        window.alert("Use un nombre más corto (menos de 500 caracteres).")
+        exit()
+    }
+    if (comentario.length >= 500){
+        window.alert("Debe escribir un comentario más corto (menos de 500 caracteres).")
+        exit()
+    }
+
+
     // Seccion de comentarios
     var seccion = document.getElementsByClassName("col")[0]
 
@@ -81,4 +101,6 @@ function mk_comentario(){
 
     seccion.append(carta)
 
+    document.getElementById("nombre").value = ""
+    document.getElementById("comentario").value = ""
 }

@@ -13,13 +13,14 @@
     <script src="../js/bootstrap.js"></script>
 </head>
 
-<!--  -->
+<!-- navbar navbar-default navbar-fixed-top -->
+ <!-- navbar navbar-expand-lg navbar-light bg-light -->
 
 <body>
     <div class="barra_navegacion">
         <!-- Barra de navegacion sacadas de bootstrap.com -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="main.html">Logo</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="../main.html">Smart Event</a>
             <!-- Boton del menu, usa data-bs en Bootstrap 5 -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -41,8 +42,7 @@
         </nav>
     </div>
 
-    <!-- Listado de eventos -->
-   <div class="row row-cols-1 row-cols-md-2 g-4">
+   <div class="row row-cols-1 row-cols-lg-1 g-4">
         <div class="col">
             <!-- Tarjetas sacadas de bootstrap.com -->
             <!-- Carta sacada de bootstrap.com -->
@@ -54,7 +54,7 @@
                     <p class="card-subtitle mb-2 text-body-secondary">
                         <small>
                             <script>
-                                document.write(new Date())
+                                document.write(new Date("1900-01-01T09:23:01"))
                             </script>
                         </small>
                     </p>
@@ -67,6 +67,7 @@
     </div>
 
     <!-- Formulario sacado de bootstrap.com con algunos cambios -->
+    <br>
     <form>
         <!-- Nombre del usuario -->
         <div class="mb-3">

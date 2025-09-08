@@ -18,8 +18,8 @@
 <body>
     <div class="barra_navegacion">
         <!-- Barra de navegacion sacadas de bootstrap.com -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="main.html">Logo</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="main.html">Smart Event</a>
             <!-- Boton del menu, usa data-bs en Bootstrap 5 -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -41,15 +41,22 @@
         </nav>
     </div>
     <!-- ---------------------------------------- -->
-    <div class="evento_importamte">
+    <div class="evento_importante">
+        <h1 id="titulo_evento">Orquesta clásica</h1>
         <div class="imagen_evento">
-            <img src="img" alt="">
+            <img src="img/concierto musica clasica.jpg" alt="Evento" width="1000">
         </div>
         <div class="info_evento">
-            <p>Evento importante</p>
-            <script>
-                timer(new Date("2025-01-12T20:24:28"))
-            </script>
+            <br>
+            <h2>21 de Diciembre 2025 - 5PM</h2>
+            <h4> En solo:
+                <script>
+                    timer(new Date("2025-12-21T17:00:00"))
+                </script>
+            </h4>
+            <h4>¡No se pierdan este evento!</h4>
+            <h4>En el Teatro Aula Magna de la Universidad Técnica Federico Santa María (Casa Central).</h4>
+            <h5>3000 pesos la entrada.</h5>
         </div>
     </div>
     <!-- ---------------------------------------- -->
