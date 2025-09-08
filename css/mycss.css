@@ -43,14 +43,6 @@ Paleta de colores:
     float: left;
 }
 
-/*
-.col-sm-6{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    flex-wrap: wrap;
-}
-*/
-
 body {
     padding-top: 70px;
     background-color: #fefae0 !important;
@@ -71,6 +63,13 @@ body {
 
 .imagen_evento{
     text-align: center;
+}
+
+.imagen_evento > img{
+    max-width: 90%;
+    width: auto;
+    max-height: 90%;
+    height: auto;
 }
 
 .barra_navegacion{
